@@ -18,7 +18,7 @@ header { /* con esto le dimos el fondo negro al titulo de blog */
     background-color: #364552;
     color: white;
     padding: 1rem 1rem; /* los rem son relativos a la etiqueta de html */
-
+  
 }
 
 header h1{/* para que solo afecte a lo que este dentro de h1 */ /* centra el texto */
@@ -46,29 +46,6 @@ body{
 
 
 
-
-/* Estilos para imágenes alineadas a la izquierda */
-.img_Izq{
-    display: block; /* Como bloque */
-    float: left; /* Flotar a la izquierda */
-    margin-bottom: 10px; /* Margen inferior */
-    margin-right: 30px; /* Margen derecho */
-    width: 30%; /* Ancho relativo */
-}
-
-/* Estilos para las imágenes dentro de .img_Izq */
-.img_Izq img{ 
-    border: 8px solid var(--color06); /* Borde sólido blanco */
-    /* border-radius: 5px 35px 5px 35px; Bordes redondeados */
-    width: 100%; /* Ancho relativo al contenedor */
-}
-
-.img_Izq img:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease-in-out; 
-}
-
-
 /* Estilos para imágenes alineadas a la derecha */
 .img_Der{
     display: block; /* Como bloque */
@@ -77,6 +54,9 @@ body{
     margin-left: 30px; /* Margen izquierdo */
     width: 30%; /* Ancho relativo */
     margin-right: 20px;
+
+
+
 }
 
 
@@ -87,23 +67,11 @@ body{
     width: 100%; /* Ancho relativo al contenedor */
 }
 
+
+
 .img_Der img:hover {
-    transform: rotate(20deg); 
-    transition: transform 0.3s ease-in-out; 
-}
-
-
-/* Estilos para el primer tipo de párrafo */
-.parr_01{
-    color: var(--texto-01); /* Color de texto */
-    font-size: 18px; /* Tamaño de fuente */
-    line-height: 1.50rem; /* Espaciado entre líneas */
-    margin: 10px; /* Margen alrededor */
-    padding: 0; /* Sin relleno */
-    text-align: justify; /* Texto justificado */
-    background-color: azure;
-    border-radius: 5px;
-    padding: 4px;
+    transform: rotate(360deg); /* Hace que la imagen gire 360 grados */
+    transition: transform 2s ease-in-out; /* Ajusta el tiempo de la transición para que sea suave */
 }
 
 
@@ -114,33 +82,18 @@ body{
     column-count: 3; /* Divide el texto en 3 columnas */
     column-gap: 20px; /* Espacio entre columnas */
     column-rule: var(--color03) 2px solid; /* Línea divisoria entre columnas */
-    font-size: 18px; /* Tamaño de fuente */
-    line-height: 1.50rem; /* Espaciado entre líneas */
-    margin: 10px; /* Margen alrededor */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 2.5rem; /* Espaciado entre líneas */
+    margin: 20px; /* Margen alrededor */
     padding: 0; /* Sin relleno */
     text-align: justify; /* Texto justificado */
     background-color: azure;
     border-radius: 5px;
     padding: 10px;
+    height: 500px;
 }
 
 
-
-.img_bottom{
-
-    display: block; /* Como bloque */
-    float: right; /* Flotar a la izquierda */
-    margin-bottom: 10px; /* Margen inferior */
-    margin-right: 30px; /* Margen derecho */
-    width: 30%; /* Ancho relativo */
-    
-}
-
-.img_bottom img{
-    border: 8px solid var(--color02);
-    width: 100%;
-    
-}
 
 
 
