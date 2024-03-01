@@ -1,0 +1,184 @@
+:root{
+    --color01: #000000;
+    --color02: #ff8f8f;
+    --color03: #8597ff;
+    --color04: #53ff89;
+    --color05: #deee00;
+    --color06: #efefef;
+}
+
+html{
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header { /* con esto le dimos el fondo negro al titulo de blog */
+
+    background-color: #364552;
+    color: white;
+    padding: 1rem 1rem; /* los rem son relativos a la etiqueta de html */
+
+}
+
+header h1{/* para que solo afecte a lo que este dentro de h1 */ /* centra el texto */
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+
+
+body{
+    /* background-image: url("/img/fondo01.jpg"); Imagen de fondo */
+    /* padding: 15px; Relleno alrededor del contenido */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* color: var(--texto-01); Color de texto usando variable */
+    background-size: 100% 100%;    
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para imágenes alineadas a la izquierda */
+.img_Izq{
+    display: block; /* Como bloque */
+    float: left; /* Flotar a la izquierda */
+    margin-bottom: 10px; /* Margen inferior */
+    margin-right: 30px; /* Margen derecho */
+    width: 30%; /* Ancho relativo */
+}
+
+/* Estilos para las imágenes dentro de .img_Izq */
+.img_Izq img{ 
+    border: 8px solid var(--color06); /* Borde sólido blanco */
+    /* border-radius: 5px 35px 5px 35px; Bordes redondeados */
+    width: 100%; /* Ancho relativo al contenedor */
+}
+
+
+/* Estilos para imágenes alineadas a la derecha */
+.img_Der{
+    display: block; /* Como bloque */
+    float: right; /* Flotar a la derecha */
+    margin-bottom: 10px; /* Margen inferior */
+    margin-left: 30px; /* Margen izquierdo */
+    width: 30%; /* Ancho relativo */
+    margin-right: 20px;
+}
+
+
+/* Estilos para las imágenes dentro de .img_Der */
+.img_Der img{
+    border: 8px solid var(--color06); /* Borde sólido blanco */
+    /* border-radius: 35px 5px 35px 5px; Bordes redondeados alternados */
+    width: 100%; /* Ancho relativo al contenedor */
+}
+
+
+/* Estilos para el primer tipo de párrafo */
+.parr_01{
+    color: var(--texto-01); /* Color de texto */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.50rem; /* Espaciado entre líneas */
+    margin: 10px; /* Margen alrededor */
+    padding: 0; /* Sin relleno */
+    text-align: justify; /* Texto justificado */
+    background-color: azure;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+
+
+/* Estilos para el segundo tipo de párrafo, con columnas */
+.parr_02{
+    color: var(--texto-01); /* Color de texto */
+    column-count: 3; /* Divide el texto en 3 columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+    column-rule: var(--color03) 2px solid; /* Línea divisoria entre columnas */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.50rem; /* Espaciado entre líneas */
+    margin: 10px; /* Margen alrededor */
+    padding: 0; /* Sin relleno */
+    text-align: justify; /* Texto justificado */
+    background-color: azure;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+.img_bottom{
+
+    display: block; /* Como bloque */
+    float: right; /* Flotar a la izquierda */
+    margin-bottom: 10px; /* Margen inferior */
+    margin-right: 30px; /* Margen derecho */
+    width: 30%; /* Ancho relativo */
+    
+}
+
+.img_bottom img{
+    border: 8px solid var(--color02);
+    width: 100%;
+    
+}
+
+
+
+.container{ /* centra el texto he imagines dentre de section */
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+
+section a{
+    margin-bottom: 20px;
+    font-size: 50px;
+    transition: color 0.3s ease; /* para darle una transicion que solo afecte al color al poner el mouse sobre el link */
+    color: #fff;
+    text-decoration: none;
+
+}
+
+section a:hover{
+    color: cornflowerblue;
+
+}
+
+/* Estilos para el pie de página */
+footer{
+    bottom: 0; /* Alinea el pie de página en la parte inferior */
+    left: 0; /* Alinea el pie de página a la izquierda */
+    position: fixed; /* Fija el pie de página, permanece visible */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el contenido del pie de página */
+.footercontent {
+    background-color: var(--color01); /* Color de fondo */
+    color: var(--color06); /* Color de texto */
+    font-size: 13px; /* Tamaño de la fuente */
+    line-height: 1.50rem; /* Espaciado entre líneas */
+    padding-top: 8px; /* Relleno superior */
+    padding-bottom: 10px; /* Relleno inferior */
+    text-align: center; /* Alineación de texto centrada */
+}
+
+footer a{ /* para quitar el color azul de los links */
+    transition: color 0.3s ease; /* para darle una transicion que solo afecte al color al poner el mouse sobre el link */
+    color: #fff;
+    text-decoration: none;
+}
+
